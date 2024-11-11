@@ -35,7 +35,7 @@ public class Window extends JFrame implements Runnable {
         ai = new Rect(Constants.SCREEN_WIDTH - Constants.PADDLE_WIDTH - Constants.H2_PADDING, Constants.H2_PADDING, Constants.PADDLE_WIDTH, Constants.PADDLE_HEIGHT, Constants.PADDLE_COLOR);
         ballRect = new Rect(Constants.SCREEN_WIDTH / 2, Constants.SCREEN_HEIGHT / 2, Constants.BALL_WIDTH, Constants.BALL_WIDTH, Constants.PADDLE_COLOR);
         ball = new Ball(ballRect, playerOne, ai, leftScoreText, rightScoreText);
-        aiController = new AiController(new PlayerController(ai), ballRect);
+        aiController = new AiController(new PlayerController(ai), ballRect, ai);
     }
 
     public void update(double dt) {
