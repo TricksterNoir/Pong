@@ -1,6 +1,5 @@
 import javax.swing.JFrame;
 import java.awt.*;
-import java.awt.event.KeyEvent;
 
 public class MainMenu extends JFrame implements Runnable {
 
@@ -39,7 +38,7 @@ public class MainMenu extends JFrame implements Runnable {
             startGame.color = new Color(158,158,158);
 
             if(mouseListener.isMousePressed()){
-                Main.changeState(1, "");
+                Main.changeState(4, "");
             }
         }else{
             startGame.color = Color.WHITE;
