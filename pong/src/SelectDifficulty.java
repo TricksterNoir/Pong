@@ -52,6 +52,7 @@ public class SelectDifficulty extends JFrame implements  Runnable{
             if(mouseListener.isMousePressed()){
                 Constants.AI_PADDLE_SPEED = Constants.MEDIUM_SPEED;
                 Main.changeState(1, "");
+
             }
         }else{
             mediumText.color = Color.WHITE;
