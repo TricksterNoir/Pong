@@ -14,11 +14,11 @@ This is a simple Pong game written in Java. The game features a classic Pong gam
 1. Clone the repository or download the source code.
 2. Compile the Java files using your preferred IDE or from the command line:
    ```bash
-   javac *.java
+   javac pong/src/*.java
    ```
 3. Run the game:
     ```bash
-    java main
+    java -cp pong/src Main
     ```
 
 ## Game Controls
